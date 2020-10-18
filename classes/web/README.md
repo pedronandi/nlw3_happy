@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Happy was bootstrapped with Create React App. This is a project developed by me during Rocketseat's NLW#3 Imersion.
 
 ## Available Scripts
 
