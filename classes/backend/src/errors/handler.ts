@@ -1,5 +1,6 @@
 import { ErrorRequestHandler } from 'express';
 import { ValidationError } from 'yup';
+import { EntityNotFoundError } from 'typeorm/error/EntityNotFoundError'
 
 interface ValidationErrors {
   [key: string]: string[];
@@ -23,6 +24,12 @@ const errorHandler: ErrorRequestHandler = (error, request, response, next) => {
     return response.status(400).json({
       message: 'Validation fails',
       errors
+    });
+  }
+
+  if (error instanceof EntityNotFoundError) {
+    return response.status(400).json({
+      message: error.message
     });
   }
 
