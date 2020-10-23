@@ -1,15 +1,53 @@
-import React from 'react';
-import { FiPlus } from 'react-icons/fi';
+import React, { useEffect, useState } from 'react';
+import { FiPlus, FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { Map, TileLayer } from 'react-leaflet';
-
-import 'leaflet/dist/leaflet.css';
+import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import Leaflet from 'leaflet';
 
 import mapMarkerImg from '../images/map-marker.svg';
 
 import '../styles/pages/orphanages-map.css';
+import api from '../services/api';
+
+const mapIcon = Leaflet.icon({
+    iconUrl: mapMarkerImg,
+    iconSize: [58, 68],
+    iconAnchor: [29, 68],
+    popupAnchor: [170, 2],
+});
+
+interface Orphanage {
+    id: number;
+    latitude: number;
+    longitude: number;
+    name: string;
+}
 
 function OrphanagesMap() {
+
+    /* Toda vez que setOrphanages for executada, o retorno dela será atribuído à orphanages */
+    const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
+
+    /*
+      CICLO DE RENDERIZAÇÃO:
+      Ao carregar a página, esse console.log será exibido duas vezes: Uma vez um array vazio e outra vez um array preenchido
+      1. orphanages é declarado como sendo um array vazio = useState([]) -- Guarda o valor inicial
+      2. Na execução do useEffect, o retorno da request GET será passado à setOrphanages
+      3. A execução de setOrphanages implica em nova renderização do componente em tela e no preenchimento do array orphanages
+    
+      console.log(orphanages);
+    */
+
+    useEffect(() => {
+      api.get('orphanages').then(response => {
+        /* 
+          Na primeira renderização do componente ocorrerá a requisição GET dos orfanatos
+          e o array de retorno será passado à setOrphanages
+        */
+        setOrphanages(response.data);
+      });
+    }, []);
+
     return (
         <div id="page-map">
             <aside>
@@ -39,9 +77,26 @@ function OrphanagesMap() {
                 <TileLayer 
                   url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
                 />
+                
+                {orphanages.map(orphanage => {
+                    return (
+                        <Marker
+                        icon={mapIcon}
+                        position={[orphanage.latitude, orphanage.longitude]}
+                        key={orphanage.id}
+                        >
+                            <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup">
+                                {orphanage.name}
+                                <Link to={`/orphanages/${orphanage.id}`}>
+                                    <FiArrowRight size={32} color="#FFF"/>
+                                </Link>
+                            </Popup>
+                        </Marker>
+                    )
+                })}
             </Map>
 
-            <Link to="" className="create-orphanage">
+            <Link to="/orphanages/create" className="create-orphanage">
                 <FiPlus size={32} color="#fff"/>
             </Link>
         </div>
