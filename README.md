@@ -30,4 +30,6 @@ Foram duas semanas muito intensas e cheias de trabalho, mas mesmo assim aprendi 
 ## "Me dá ibagens!!"
 
 <p align="center">Landing Page</p>
-![Capa](https://github.com/pedronandi/nlw3_happy/blob/master/.github/happy_app.jpg?raw=true)
+<p align="center">
+  <img src="/github/happy_landing_page.png" />
+</p>
