@@ -46,6 +46,6 @@ Foram duas semanas muito intensas e cheias de trabalho, mas mesmo assim aprendi 
 
 <p align="center"><strong>Visão do App</strong></p>
 <p align="center">
-  <img src="/.github/happy_app.jpg" />
+  <img src="/.github/happy_app.jpg" width=50/>
 </p>
 
