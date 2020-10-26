@@ -31,5 +31,5 @@ Foram duas semanas muito intensas e cheias de trabalho, mas mesmo assim aprendi 
 
 <p align="center">Landing Page</p>
 <p align="center">
-  <img src="/github/happy_landing_page.png" />
+  <img src="/.github/happy_landing_page.png" />
 </p>
