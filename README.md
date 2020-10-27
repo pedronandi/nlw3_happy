@@ -1,15 +1,13 @@
-<h1 align="center">Happy - NLW #3</h1>
-<p align="center">Projeto Happy construído durante a <strong>Next Level Week #3</strong> da <strong>Rocketseat</strong></p>
+<h1 align="center">Happy - NLW#3</h1>
+<p align="center">"Happy" construído durante a <strong>Next Level Week #3</strong> da <strong>Rocketseat</strong></p>
 
 ![Capa](https://paste.cyberland.fun/happy.png)
 
 ## 💻 Projeto
 
-O Happy é uma aplicação que conecta pessoas à casas de acolhimento institucional para fazer o dia de muitas crianças mais feliz 💜
+O Happy é uma aplicação que conecta pessoas à casas de acolhimento institucional tentando fazer o dia de muitas crianças mais feliz 💜
 
 ## 🚀 Tecnologias utilizadas
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
@@ -19,32 +17,30 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 👦 O que aprendi com a NLW?
 
-Com a **Next Level Week** pude aprender mais sobre `Node.js`, front-end com `React.js` e de mobile com `React-Native`.
-A didática foi tão boa que consegui fixar os conceitos do `UseEffect()` e do `useState()`!
-
-Para a versão **Mobile** do projeto utilizei o Expo para visualizar a minha app no meu smartphone.
+Com a **NLW#3** pude aprender mais sobre como usar o `Node.js`, o `React.js` e conheci o `React-Native`.
+A didática foi tão boa que consegui fixar conceitos como `UseEffect()` e `useState()`, do `React.js`! Na versão **Mobile**, do projeto, utilizei o **Expo** que me deu muita produtividade e agilidade, realmente gostei!
 
 ## Conclusão
-Foram duas semanas muito intensas e cheias de trabalho, mas mesmo assim aprendi bastante e me diverti bastante!
+Foram duas semanas muito intensas e cheias de trabalho. Mesmo assim aprendi e me diverti muito!
 
 ## "Me dá ibagens!!"
 
-<p align="center"><strong>Landing Page</strong></p>
+<p align="center"><strong><Landing Page></strong></p>
 <p align="center">
   <img src="/.github/happy_landing_page.png" />
 </p>
 
-<p align="center"><strong>Orfanatos</strong></p>
+<p align="center"><strong><Orfanatos></strong></p>
 <p align="center">
   <img src="/.github/happy_view_orphanages.png" />
 </p>
 
-<p align="center"><strong>Detalhe do Orfanato</strong></p>
+<p align="center"><strong><Detalhe do Orfanato></strong></p>
 <p align="center">
   <img src="/.github/happy_orphanage.png" />
 </p>
 
-<p align="center"><strong>Visão do App</strong></p>
+<p align="center"><strong><Mobile></strong></p>
 <p align="center">
   <img src="/.github/happy_app.jpg" width=600/>
 </p>
