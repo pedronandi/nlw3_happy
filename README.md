@@ -25,22 +25,22 @@ Foram duas semanas muito intensas e cheias de trabalho. Mesmo assim aprendi e me
 
 ## "Me dá ibagens!!"
 
-<p align="center"><strong><Landing Page></strong></p>
+<p align="center"><strong>[Landing Page]</strong></p>
 <p align="center">
   <img src="/.github/happy_landing_page.png" />
 </p>
 
-<p align="center"><strong><Orfanatos></strong></p>
+<p align="center"><strong>[Orfanatos]</strong></p>
 <p align="center">
   <img src="/.github/happy_view_orphanages.png" />
 </p>
 
-<p align="center"><strong><Detalhe do Orfanato></strong></p>
+<p align="center"><strong>[Detalhe do Orfanato]</strong></p>
 <p align="center">
   <img src="/.github/happy_orphanage.png" />
 </p>
 
-<p align="center"><strong><Mobile></strong></p>
+<p align="center"><strong>[Mobile]</strong></p>
 <p align="center">
   <img src="/.github/happy_app.jpg" width=600/>
 </p>
